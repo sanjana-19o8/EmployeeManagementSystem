@@ -28,7 +28,12 @@ public class EmployeeManagementSystem {
         }
     }
 
-    private static void readData(Datasource datasource, String inputData) {
+    // Add a getter method for the employees list
+    public List<Employee> getEmployees() {
+        return new ArrayList<>(employees);
+    }
+
+    public static void readData(Datasource datasource, String inputData) {
         try {
             Employee employee = datasource.readEmployee(inputData);
             employees.add(employee);
