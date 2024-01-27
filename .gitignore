@@ -1,0 +1,13 @@
+# .gitignore for Java projects
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Compiled binary
+/bin/
+
+# Dependency directories
+/target/
